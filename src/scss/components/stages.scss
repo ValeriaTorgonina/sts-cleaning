@@ -1,0 +1,46 @@
+.stages {
+    position: relative;
+    background: #353E60;
+    padding: 100px 0 260px;
+
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .title {
+        margin-bottom: 135px;
+    }
+
+    &__decor {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 23%;
+        left: 0;
+    }
+
+    &__card-inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        background: #424B70;
+        color: white;
+        padding: 40px 30px 50px;
+        width: 395px;
+    }
+
+    &__card-decor {
+        width: 75px;
+        height: 75px;
+        margin-bottom: 25px;
+    }
+
+    &__card-title {
+        display: block;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+}

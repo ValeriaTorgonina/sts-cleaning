@@ -70,20 +70,30 @@ video:focus {
 }
 
 .title {
+    display: block;
     font-size: 44px;
     color: #211F40;
+
+    &--light {
+        color: #fff;
+        font-weight: 700;
+    }
 }
 
 .text {
     font-weight: 300;
     font-size: 16px;
     line-height: 28px;
+
+    &--light {
+        color: #fff;
+    }
 }
 
 .button {
     background: #2C47F0;
     border-radius: 4px;
-    color: white;
+    color: #fff;
     font-size: 16px;
     padding: 15px 60px;
 
