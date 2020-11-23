@@ -53,7 +53,7 @@
             </div>
         </header>
         <main class="main">
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="services__left-col">
                         <h2 class="title">Наши услуги</h2>
@@ -64,83 +64,30 @@
                         <button class="button">Заказать уборку</button>
                     </div>
                     <div class="services__right-col">
-                        <div class="services__filter">
-                            <button class="services__filter-btn active">Компаниям</button>
-                            <button class="services__filter-btn">Частным клиентам</button>
-                            <button class="services__filter-btn new">Спец. предложения</button>
+                        <div class="services__filter" :class="forWhom">
+                            <button class="services__filter-btn" 
+                                :class="{active: forWhom === FOR_WHOM_ENUM.company}"
+                                @click="showFor(FOR_WHOM_ENUM.company)">
+                                Компаниям
+                            </button>
+                            <button class="services__filter-btn" 
+                                :class="{active: forWhom === FOR_WHOM_ENUM.privateClients}"
+                                @click="showFor(FOR_WHOM_ENUM.privateClients)">
+                                Частным клиентам
+                            </button>
+                            <button class="services__filter-btn new" 
+                                :class="{active: forWhom === FOR_WHOM_ENUM.specialOffer}"
+                                @click="showFor(FOR_WHOM_ENUM.specialOffer)">
+                                Спец. предложения
+                            </button>
                         </div>
                         <ul class="services__list">
-                            <li class="services__item">
+                            <li class="services__item" v-for="offer in offers[forWhom]">
                                 <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
+                                    <use :xlink:href="'assets/img/sprite.svg#' + offer.icon"></use>
                                 </svg>
-                                <h4 class="services__item-name">Ежедневная уборка</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Мойка окон и фасадов</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Послестроительная уборка</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Обслуживание мероприятий</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Промышленный клининг</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Уборка офисов под ключ</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Клининг для ТСЖ, ЖСК, УК</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
-                            </li>
-                            <li class="services__item">
-                                <svg class="services__item-decor">
-                                    <use xlink:href="assets/img/sprite.svg#24"></use>
-                                </svg>
-                                <h4 class="services__item-name">Предоставление персонала</h4>
-                                <span class="services__item-text">
-                                    Квартир, зданий, производственных помещений и офсиов
-                                </span>
+                                <h4 class="services__item-name">{{ offer.name }}</h4>
+                                <span class="services__item-text">{{ offer.text }}</span>
                             </li>
                         </ul>
                     </div>
