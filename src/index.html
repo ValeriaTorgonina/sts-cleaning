@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="content-language" content="ru" />
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>стс-уборка</title>
 </head>
 
@@ -143,54 +144,56 @@
             </section>
             <section class="results">
                 <h2 class="title">Результат нашей работы</h2>
-                <div class="results__images">
-                    <img src="" alt="до" class="result__img">
-                    <img src="" alt="после" class="result__img">
-                </div>
-                <div class="results__slider swiper">
-                    <div class="swiper-wrapper">
-                        <div class="results__slide swiper-slide">
-                            <h4 class="results__slide-title">Уборка помещения после ремонта</h4>
-                            <span class="results__sub-title">Процесс</span>
-                            <p class="text">
-                                Влажная очистка поверхностей, с использованием хим. 
-                                моющих средств, от следов краски, цемента, затирок, клея, извёстки
-                            </p>
-                            <span class="results__sub-title">Результат работы</span>
-                            <p class="text">
-                                Специалисты выполнили гениральную уборку 
-                                помещения качественно и в короткие сроки
-                            </p>
-                        </div>
-                        <div class="results__slide swiper-slide">
-                            <h4 class="results__slide-title">Мойка окон в БЦ название</h4>
-                            <span class="results__sub-title">Процесс</span>
-                            <p class="text">
-                                Влажная очистка поверхностей, с использованием хим. 
-                                моющих средств, от следов краски, цемента, затирок, клея, извёстки
-                            </p>
-                            <span class="results__sub-title">Результат работы</span>
-                            <p class="text">
-                                Специалисты выполнили гениральную уборку 
-                                помещения качественно и в короткие сроки
-                            </p>
-                        </div>
-                        <div class="results__slide swiper-slide">
-                            <h4 class="results__slide-title">Уборка помещения после ремонта</h4>
-                            <span class="results__sub-title">Процесс</span>
-                            <p class="text">
-                                Влажная очистка поверхностей, с использованием хим. 
-                                моющих средств, от следов краски, цемента, затирок, клея, извёстки
-                            </p>
-                            <span class="results__sub-title">Результат работы</span>
-                            <p class="text">
-                                Специалисты выполнили гениральную уборку 
-                                помещения качественно и в короткие сроки
-                            </p>
-                        </div>
+                <div class="results__inner">
+                    <div class="results__images">
+                        <img class="results__img" src="./assets/img/before.jpg" alt="до" class="result__img">
+                        <img class="results__img" src="./assets/img/after.jpg" alt="после" class="result__img">
                     </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="results__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="results__slide swiper-slide">
+                                <h4 class="results__slide-title">Уборка помещения после ремонта</h4>
+                                <span class="results__slide-sub-title">Процесс</span>
+                                <p class="text">
+                                    Влажная очистка поверхностей, с использованием хим. 
+                                    моющих средств, от следов краски, цемента, затирок, клея, извёстки
+                                </p>
+                                <span class="results__slide-sub-title">Результат работы</span>
+                                <p class="text">
+                                    Специалисты выполнили гениральную уборку 
+                                    помещения качественно и в короткие сроки
+                                </p>
+                            </div>
+                            <div class="results__slide swiper-slide">
+                                <h4 class="results__slide-title">Мойка окон в БЦ название</h4>
+                                <span class="results__slide-sub-title">Процесс</span>
+                                <p class="text">
+                                    Влажная очистка поверхностей, с использованием хим. 
+                                    моющих средств, от следов краски, цемента, затирок, клея, извёстки
+                                </p>
+                                <span class="results__slide-sub-title">Результат работы</span>
+                                <p class="text">
+                                    Специалисты выполнили гениральную уборку 
+                                    помещения качественно и в короткие сроки
+                                </p>
+                            </div>
+                            <div class="results__slide swiper-slide">
+                                <h4 class="results__slide-title">Уборка помещения после ремонта</h4>
+                                <span class="results__slide-sub-title">Процесс</span>
+                                <p class="text">
+                                    Влажная очистка поверхностей, с использованием хим. 
+                                    моющих средств, от следов краски, цемента, затирок, клея, извёстки
+                                </p>
+                                <span class="results__slide-sub-title">Результат работы</span>
+                                <p class="text">
+                                    Специалисты выполнили гениральную уборку 
+                                    помещения качественно и в короткие сроки
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
                 </div>
             </section>
             <section class="partners">
@@ -381,6 +384,7 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
