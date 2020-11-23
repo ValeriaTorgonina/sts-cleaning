@@ -14,8 +14,10 @@
     <div class="wrapper">
         <header class="main-header">
             <div class="container">
-                <a href="#" class="main-header__logo">
-                    <img src="" alt="стс-уборка лого" class="main-header__logo-img">
+                <a href="#" class="main-header__logo-img">
+                    <svg class="main-header__logo-img">
+                        <use xlink:href="assets/img/sprite.svg#logo"></use>
+                    </svg>
                 </a>
                 <button class="main-header__mobil-btn"></button>
                 <nav class="main-nav">
@@ -40,7 +42,7 @@
                         </li>
                     </ul>
                     <div class="main-nav__info">
-                        <select name="city">
+                        <select class="main-nav__select" name="city">
                             <option value="value1">Значение 1</option> 
                             <option value="value2" selected>Москва и область</option>
                             <option value="value3">Значение 3</option>
@@ -354,7 +356,9 @@
         <footer class="main-footer">
             <div class="container">
                 <a href="#" class="main-footer__logo">
-                    <img src="" alt="стс-уборка лого" class="main-footer__logo-img">
+                    <svg class="main-footer__logo-img">
+                        <use xlink:href="assets/img/sprite.svg#logo"></use>
+                    </svg>
                 </a>
                 <ul class="main-footer__list">
                     <li class="main-footer__item">

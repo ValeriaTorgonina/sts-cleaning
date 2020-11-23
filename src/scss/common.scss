@@ -7,7 +7,10 @@ html {
 }
 
 body {
-    font-weight: 400;
+    font-family: 'Museo Sans Cyrl', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    background: #F5F9FD;
 }
 
 ul {
@@ -20,9 +23,13 @@ a {
     text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
+
+    &:hover {
+        color: #186DEE;
+    }
 }
 
-input, textarea, button {
+input, textarea, button, select {
     background: none;
     border: none;
     resize: none;
@@ -34,8 +41,6 @@ input, textarea, button {
 }
 
 button {
-    background: none;
-    border: none;
     cursor: pointer;
     transition: 0.3s;
 }

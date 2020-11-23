@@ -1,0 +1,19 @@
+.main-header {
+    padding: 25px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo-img {
+        width: 182px;
+        height: 20px;
+        fill: #186DEE;
+    }
+
+    &__mobil-btn {
+        display: none;
+    }
+}
