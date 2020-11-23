@@ -1,0 +1,16 @@
+.socials {
+    width: 148px;
+    display: flex;
+    justify-content: space-between;
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+        fill: #fff;
+        transition: 0.3s;
+
+        &:hover {
+            fill: #F25929;
+        }
+    }
+}
