@@ -17,7 +17,7 @@ export const menu = new Vue({
             if (this.menuState === MENU_STATES.OPEN) {
                 this.menuState = MENU_STATES.CLOSE;
                 document.body.style.overflow = 'auto';
-            } else {
+            }else if(this.menuState === MENU_STATES.CLOSE) {
                 this.menuState = MENU_STATES.OPEN;
                 document.body.style.overflow = 'hidden';
             }

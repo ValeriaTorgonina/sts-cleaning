@@ -18,4 +18,7 @@ const mySwiper = new Swiper('.results__slider', {
     },
 });
 
-const scroll = skrollr.init();
+
+if(window.innerWidth > 768) {
+    const scroll = skrollr.init();
+}
