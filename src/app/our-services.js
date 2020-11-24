@@ -3,12 +3,12 @@ import Vue from 'vue';
 const FOR_WHOM_ENUM = {
     company: 'company',
     privateClients: 'private-clients',
-    specialOffer: 'special-offer'
-}
+    specialOffer: 'special-offer',
+};
 
 export const ourServices = new Vue({
     el: '#services',
-    data: function() {
+    data: function () {
         return {
             FOR_WHOM_ENUM,
             forWhom: FOR_WHOM_ENUM.company,
@@ -138,13 +138,13 @@ export const ourServices = new Vue({
                         name: 'Обслуживание мероприятий',
                         text: 'Квартир, зданий, производственных помещений и офсиов',
                     },
-                ]
-            }
-        }
+                ],
+            },
+        };
     },
     methods: {
         showFor(forWhom) {
             this.forWhom = forWhom;
-        }
-    }
-}) 
+        },
+    },
+});

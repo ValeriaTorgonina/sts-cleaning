@@ -13,4 +13,13 @@
             fill: #F25929;
         }
     }
+
+    @media(max-width: 1000px) {
+        width: 90px;
+        
+        &__icon {
+            width: 25px;
+            height: 25px;
+        }
+    }
 }

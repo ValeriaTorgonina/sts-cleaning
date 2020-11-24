@@ -1,7 +1,7 @@
 .stages {
     position: relative;
     background: #353E60;
-    padding: 70px 0 260px;
+    padding: 100px 0 200px;
 
     .container {
         position: relative;
@@ -42,5 +42,67 @@
         display: block;
         margin-bottom: 10px;
         font-size: 20px;
+    }
+
+    @media(max-width: 1345px) {
+        padding: 50px 0 100px;
+
+        &__card {
+            padding: 30px 20px;
+            width: 300px;
+        }
+        
+        &__card-decor {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 15px;
+        }
+    }
+
+    @media(max-width: 1000px) {
+        &__card {
+            width: 230px;
+        }
+    }
+
+    @media(max-width: 768px) {
+        padding: 50px 0;
+
+        .title {
+            margin-bottom: 80px;
+        }
+
+        &__decor {
+            top: 16%;
+        }
+
+        &__card-inner {
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 49%;
+            margin-bottom: 20px;
+
+            &:last-of-type {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    @media(max-width: 560px) {
+        padding: 40px 0;
+
+        .title {
+            margin-bottom: 30px;
+        }
+
+        &__decor {
+            display: none;
+        }
+
+        &__card {
+            width: 100%;
+        }
     }
 }

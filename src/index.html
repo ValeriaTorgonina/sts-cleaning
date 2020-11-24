@@ -12,14 +12,17 @@
 
 <body>
     <div class="wrapper">
-        <header class="main-header">
+        <header class="main-header" :class="menuState">
             <div class="container">
                 <a href="#" class="main-header__logo-img">
                     <svg class="main-header__logo-img">
                         <use xlink:href="assets/img/sprite.svg#logo"></use>
                     </svg>
                 </a>
-                <button class="main-header__mobil-btn"></button>
+                <button class="main-header__mobil-btn"
+                    @click="toggleMenu"
+                    >
+                </button>
                 <nav class="main-nav">
                     <ul class="main-nav__list">
                         <li class="main-nav__item">
@@ -130,7 +133,7 @@
                                 узнаем о объеме работ и удобном для вас времени
                             </p>
                         </div>
-                        <div class="stages__card" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="350">
+                        <div class="stages__card" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="300">
                             <svg class="stages__card-decor">
                                 <use xlink:href="assets/img/sprite.svg#reward"></use>
                             </svg>
@@ -330,22 +333,22 @@
                         <a href="#" class="main-footer__nav-link">Главная</a>
                     </li>
                     <li class="main-footer__nav-item">
-                        <a href="#" class="main-footer__nav-link">Услуги</a>
-                    </li>
-                    <li class="main-footer__nav-item">
-                        <a href="#" class="main-footer__nav-link">Участие в тендерах</a>
-                    </li>
-                    <li class="main-footer__nav-item">
-                        <a href="#" class="main-footer__nav-link">О нас</a>
-                    </li>
-                    <li class="main-footer__nav-item">
                         <a href="#" class="main-footer__nav-link">Блог</a>
+                    </li>
+                    <li class="main-footer__nav-item">
+                        <a href="#" class="main-footer__nav-link">Услуги</a>
                     </li>
                     <li class="main-footer__nav-item">
                         <a href="#" class="main-footer__nav-link">Компаниям</a>
                     </li>
                     <li class="main-footer__nav-item">
+                        <a href="#" class="main-footer__nav-link">Участие в тендерах</a>
+                    </li>
+                    <li class="main-footer__nav-item">
                         <a href="#" class="main-footer__nav-link">Портфолио</a>
+                    </li>
+                    <li class="main-footer__nav-item">
+                        <a href="#" class="main-footer__nav-link">О нас</a>
                     </li>
                     <li class="main-footer__nav-item">
                         <a href="#" class="main-footer__nav-link">Контакты</a>

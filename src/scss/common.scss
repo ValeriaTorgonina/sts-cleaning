@@ -105,3 +105,35 @@ video:focus {
         transform: scale(0.95);
     }
 }
+
+@media(max-width: 1345px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 12px 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 560px) {
+    body {
+        text-align: center;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+}
