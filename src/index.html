@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="content-language" content="ru" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <title>стс-уборка</title>
 </head>
 
@@ -94,11 +93,13 @@
                     </div>
                 </div>
             </section>
-            <section class="stages">
-                <svg class="stages__decor" width="1440" height="338" viewBox="0 0 1440 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <section id="stages" class="stages">
+                <svg class="stages__decor" viewBox="0 0 1440 338" 
+                    fill="none" xmlns="http://www.w3.org/2000/svg" 
+                    v-scroll="getPosition">
                     <linearGradient id="linear-gradient">
-                        <stop offset="50%" stop-color="#F25929"/>
-                        <stop offset="50%" stop-color="#293255"/>
+                        <stop :offset="elPosition" stop-color="#F25929"/>
+                        <stop :offset="elPosition" stop-color="#293255"/>
                     </linearGradient>
                     <path d="M-11 336C-11 336 113 120 349 120C585 120 560 180 719 169C878 158 941 -1.00001 1121 2.99999C1191.18 4.55958 1250 37.1741 1304 59.0816C1395 96 1618 81 1618 81" stroke="url(#linear-gradient)" stroke-width="4" stroke-linecap="round" stroke-dasharray="12 12"/>
                 </svg>                    
@@ -109,7 +110,7 @@
                         на каждом этапе работ
                     </span>
                     <div class="stages__card-inner">
-                        <div class="stages__card">
+                        <div class="stages__card" data-aos="fade-up" data-aos-duration="1300" data-aos-offset="150">
                             <svg class="stages__card-decor">
                                 <use xlink:href="assets/img/sprite.svg#phone"></use>
                             </svg>
@@ -119,7 +120,7 @@
                                 узнаем о объеме работ и удобном для вас времени
                             </p>
                         </div>
-                        <div class="stages__card">
+                        <div class="stages__card" data-aos="fade-up" data-aos-duration="1750" data-aos-offset="250">
                             <svg class="stages__card-decor">
                                 <use xlink:href="assets/img/sprite.svg#cleaning"></use>
                             </svg>
@@ -129,7 +130,7 @@
                                 узнаем о объеме работ и удобном для вас времени
                             </p>
                         </div>
-                        <div class="stages__card">
+                        <div class="stages__card" data-aos="fade-up" data-aos-duration="2500" data-aos-offset="350">
                             <svg class="stages__card-decor">
                                 <use xlink:href="assets/img/sprite.svg#reward"></use>
                             </svg>
@@ -198,7 +199,9 @@
             </section>
             <section class="partners">
                 <h2 class="title">Нам доверяют</h2>
-                <ul class="partners__list">
+                <ul class="partners__list" 
+                    data-1000-end="transform: translate(120px, 0);" 
+                    data-0-end="transform: translate(-120px, 0);">
                     <li class="partners__item">
                         <a href="#" class="partners__item-link">
                             <img src="assets/img/partners-logo6.png" alt="А5 аптека" class="partners__item-img">
@@ -235,7 +238,9 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="partners__list">
+                <ul class="partners__list" 
+                    data-1000-end="transform: translate(80px, 0);" 
+                    data-0-end="transform: translate(-80px, 0);">
                     <li class="partners__item">
                         <a href="#" class="partners__item-link">
                             <img src="assets/img/partners-logo1.png" alt="техносила" class="partners__item-img">
@@ -272,7 +277,9 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="partners__list">
+                <ul class="partners__list" 
+                    data-1000-end="transform: translate(100px, 0);" 
+                    data-0-end="transform: translate(-100px, 0);">
                     <li class="partners__item">
                         <a href="#" class="partners__item-link">
                             <img src="assets/img/partners-logo3.png" alt="аиртек" class="partners__item-img">
@@ -384,7 +391,6 @@
         </footer>
     </div>
 
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

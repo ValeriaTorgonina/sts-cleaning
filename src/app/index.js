@@ -1,4 +1,8 @@
-import services from './services';
+import services from './our-services';
+import stages from './stages';
+import Swiper, { Navigation } from 'swiper';
+import skrollr from 'skrollr';
+Swiper.use([Navigation]);
 
 const mySwiper = new Swiper('.results__slider', {
     spaceBetween: 15,
@@ -11,3 +15,5 @@ const mySwiper = new Swiper('.results__slider', {
         prevEl: '.swiper-button-prev',
     },
 })
+
+const scroll = skrollr.init();

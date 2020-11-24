@@ -37,7 +37,12 @@
     "webpack-cli": "^4.2.0"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "lodash": "^4.17.20",
     "normalize-scss": "^7.0.1",
+    "rellax": "^1.12.1",
+    "skrollr": "^0.6.26",
+    "swiper": "^6.3.5",
     "vue": "^2.6.12"
   }
 }
