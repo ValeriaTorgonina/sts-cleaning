@@ -82,11 +82,17 @@
 
         &__card {
             width: 49%;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            text-align: center;
 
             &:last-of-type {
+                width: 100%;
                 margin: 0 auto;
             }
+        }
+
+        &__decor {
+            display: none;
         }
     }
 
@@ -95,10 +101,6 @@
 
         .title {
             margin-bottom: 30px;
-        }
-
-        &__decor {
-            display: none;
         }
 
         &__card {

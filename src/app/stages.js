@@ -1,5 +1,4 @@
 import Vue from 'vue';
-import AOS from 'aos';
 
 Vue.directive('scroll', {
     inserted: function (el, binding) {
@@ -37,9 +36,4 @@ export const stages = new Vue({
     },
 });
 
-AOS.init({
-    disable: function() {
-        const maxWidth = 768;
-        return window.innerWidth < maxWidth;
-    }
-});
+

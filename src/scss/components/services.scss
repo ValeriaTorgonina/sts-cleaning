@@ -244,8 +244,18 @@
     }
 
     @media(max-width: 560px) {
+        &__item {
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
         &__item-name {
             font-size: 18px;
+        }
+
+        .text {
+            margin: 0 auto;
+            margin-bottom: 40px;
         }
     }
 }
