@@ -37,10 +37,9 @@ export const stages = new Vue({
     },
 });
 
-if (window.innerWidth < 768) {
-    document.body.querySelectorAll('.stages__card').forEach((el) => {
-        el.removeAttribute('data-aos');
-    });
-} else {
-    AOS.init();
-}
+AOS.init({
+    disable: function() {
+        const maxWidth = 768;
+        return window.innerWidth < maxWidth;
+    }
+});
